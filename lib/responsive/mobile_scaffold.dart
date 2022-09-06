@@ -50,10 +50,12 @@ class _MobileScaffoldState extends State<MobileScaffold> {
                   Image.network(
                     'https://www.allkaset.com/content/131220165007.jpg',
                     width: 150,
+                    fit: BoxFit.cover,
                   ),
                   Image.network(
                     'http://www.allkaset.com/content/131220165019.jpg',
                     width: 150,
+                    fit: BoxFit.cover,
                   ),
                 ])),
             const SizedBox(height: 20),
