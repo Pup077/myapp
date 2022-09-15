@@ -1,4 +1,8 @@
+import 'dart:js';
+
 import 'package:flutter/material.dart';
+
+import 'datapage.dart';
 
 var myDefaultBackground = Colors.grey[300];
 
@@ -13,6 +17,12 @@ var myDrawer = Drawer(
     ListTile(
       leading: Icon(Icons.home),
       title: Text('หน้าแรก'),
+      onTap: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => Datapage()),
+        ).then((value) => null);
+      },
     ),
     ListTile(
       leading: Icon(Icons.library_books),
