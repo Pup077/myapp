@@ -1,16 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:myapp/constants.dart';
 
-import '../responsivedate/desktop_date.dart';
-
-class DesktopScaffold extends StatefulWidget {
-  const DesktopScaffold({Key? key}) : super(key: key);
+class DesktopDate extends StatefulWidget {
+  const DesktopDate({Key? key}) : super(key: key);
 
   @override
-  State<DesktopScaffold> createState() => _DesktopScaffoldState();
+  State<DesktopDate> createState() => _DesktopDateState();
 }
 
-class _DesktopScaffoldState extends State<DesktopScaffold> {
+class _DesktopDateState extends State<DesktopDate> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -30,12 +28,7 @@ class _DesktopScaffoldState extends State<DesktopScaffold> {
             ListTile(
               leading: Icon(Icons.library_books),
               title: Text('ข้อมูล'),
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => DesktopDate()),
-                ).then((value) => null);
-              },
+              onTap: () {},
             ),
             ListTile(
               leading: Icon(Icons.show_chart),

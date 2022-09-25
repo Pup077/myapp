@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:myapp/constants.dart';
+import 'package:myapp/responsive/mobile_scaffold.dart';
 
 class Datapage extends StatefulWidget {
   const Datapage({super.key});
@@ -24,7 +25,7 @@ class _DatapageState extends State<Datapage> {
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => Datapage()),
+                MaterialPageRoute(builder: (context) => MobileScaffold()),
               ).then((value) => null);
             },
           ),
