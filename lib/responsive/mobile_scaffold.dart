@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:myapp/constants.dart';
 
+import '../datapage.dart';
+
 class MobileScaffold extends StatefulWidget {
   const MobileScaffold({Key? key}) : super(key: key);
 
@@ -14,7 +16,38 @@ class _MobileScaffoldState extends State<MobileScaffold> {
     return Scaffold(
       appBar: myAppBar,
       backgroundColor: myDefaultBackground,
-      drawer: myDrawer,
+      drawer: Drawer(
+        backgroundColor: Colors.grey[300],
+        child: Column(children: [
+          DrawerHeader(child: Icon(Icons.nature)),
+          ListTile(
+            leading: Icon(Icons.home),
+            title: Text('หน้าแรก'),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Datapage()),
+              ).then((value) => null);
+            },
+          ),
+          ListTile(
+              leading: Icon(Icons.library_books),
+              title: Text('ข้อมูล'),
+              onTap: () {}),
+          ListTile(
+              leading: Icon(Icons.show_chart),
+              title: Text('สถิติ'),
+              onTap: () {}),
+          ListTile(
+              leading: Icon(Icons.textsms),
+              title: Text('ติดต่อ'),
+              onTap: () {}),
+          ListTile(
+              leading: Icon(Icons.warning),
+              title: Text('แจ้งปัญหา'),
+              onTap: () {}),
+        ]),
+      ),
       body: Container(
         padding: EdgeInsets.all(24),
         child: ListView(
