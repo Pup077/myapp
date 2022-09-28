@@ -47,6 +47,19 @@ class _DatapageState extends State<Datapage> {
           ),
         ]),
       ),
+      body: Center(
+        child: InkWell(
+          splashColor: Colors.black26,
+          onTap: () {},
+          child: Ink.image(
+            image: NetworkImage(
+                'https://www.allkaset.com/content/131220165007.jpg'),
+            height: 200,
+            width: 200,
+            fit: BoxFit.cover,
+          ),
+        ),
+      ),
     );
   }
 }

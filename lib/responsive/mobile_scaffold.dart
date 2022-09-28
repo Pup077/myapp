@@ -77,18 +77,17 @@ class _MobileScaffoldState extends State<MobileScaffold> {
             const SizedBox(height: 20),
             Container(
                 padding: EdgeInsets.all(5),
-                child: Wrap(spacing: 30, children: <Widget>[
-                  Image.network(
-                    'https://www.allkaset.com/content/131220165007.jpg',
+                child: InkWell(
+                  splashColor: Colors.black26,
+                  onTap: () {},
+                  child: Ink.image(
+                    image: NetworkImage(
+                        'https://www.allkaset.com/content/131220165007.jpg'),
+                    height: 150,
                     width: 150,
                     fit: BoxFit.cover,
                   ),
-                  Image.network(
-                    'http://www.allkaset.com/content/131220165019.jpg',
-                    width: 150,
-                    fit: BoxFit.cover,
-                  ),
-                ])),
+                )),
             const SizedBox(height: 20),
             Text(
               'แผนที่สถิติ',
