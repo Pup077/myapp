@@ -47,7 +47,7 @@ class _DatapageState extends State<Datapage> {
           ),
         ]),
       ),
-      body: Center(
+      body: Container(
         child: InkWell(
           splashColor: Colors.black26,
           onTap: () {},
