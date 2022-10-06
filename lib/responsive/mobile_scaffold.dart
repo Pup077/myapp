@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:myapp/constants.dart';
 
 import '../datapage.dart';
+import '../progress.dart';
 
 class MobileScaffold extends StatefulWidget {
   const MobileScaffold({Key? key}) : super(key: key);
@@ -44,6 +45,15 @@ class _MobileScaffoldState extends State<MobileScaffold> {
               leading: Icon(Icons.warning),
               title: Text('แจ้งปัญหา'),
               onTap: () {}),
+          ListTile(
+              leading: Icon(Icons.description),
+              title: Text('แสดงผล'),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Progress()),
+                ).then((value) => null);
+              }),
         ]),
       ),
       body: Container(
