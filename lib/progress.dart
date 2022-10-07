@@ -87,7 +87,31 @@ class _ProgressState extends State<Progress> {
               ]),
               const SizedBox(height: 20),
               Text(
+                'ความถูกต้อง: 95%',
+                style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.w800,
+                ),
+              ),
+              const SizedBox(height: 20),
+              Text(
                 'โรค: ขอบใบแห้ง',
+                style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.w800,
+                ),
+              ),
+              const SizedBox(height: 20),
+              Text(
+                'สาเหตุ: เกิดในช่วงที่เริ่มมีความร้อนความแห้งแล้ง การได้รับน้ำที่ไม่เพียงพอ',
+                style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.w800,
+                ),
+              ),
+              const SizedBox(height: 20),
+              Text(
+                'การแก้ไข: \n1. ปรับการรับแสงโดยใช้การ "พรางแสง" เพื่อช่วยลดการรับแสงที่มากเกินไปในบริเวณปลายราก\n 2.แก้ไขการให้น้ำให้อยู่ในบริเวณพุ่มของต้น\n 3.เสริมภูมิคุ้มกันด้วย อะนิโนโปรตีนและแมกนีเซียม \n 4.ใช้สารกลุ่มพาราฟินออย ช่วยเคลือบผิวใบป้องกันความร้อนได้',
                 style: TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.w800,
