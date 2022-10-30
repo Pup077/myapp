@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:myapp/constants.dart';
 
 import '../datapage.dart';
+import '../datapageone.dart';
 import '../progress.dart';
 
 class MobileScaffold extends StatefulWidget {
@@ -89,10 +90,15 @@ class _MobileScaffoldState extends State<MobileScaffold> {
                 padding: EdgeInsets.all(5),
                 child: InkWell(
                   splashColor: Colors.black26,
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => Datapageone()),
+                    ).then((value) => null);
+                  },
                   child: Ink.image(
                     image: NetworkImage(
-                        'https://www.allkaset.com/content/131220165007.jpg'),
+                        'https://www.unilife.co.th/wp-content/uploads/2021/04/4.1.png'),
                     height: 150,
                     width: 150,
                     fit: BoxFit.cover,
